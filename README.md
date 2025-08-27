@@ -1,4 +1,4 @@
-# VPN for MAC | 8月15日21.6M/S|免费Shadowrocket/Clash/V2ray/SSR订阅节点分享  更新时间 2025-08-15 09:57:10
+# VPN for MAC | 8月27日20M/S|免费V2ray/Clash/Shadowrocket/SSR订阅节点分享  更新时间 2025-08-27 10:00:10
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnformac.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://vpnformac.github.io/uploads/2025/08/0-20250815.yaml
-- https://vpnformac.github.io/uploads/2025/08/1-20250815.yaml
-- https://vpnformac.github.io/uploads/2025/08/2-20250815.yaml
-- https://vpnformac.github.io/uploads/2025/08/3-20250815.yaml
-- https://vpnformac.github.io/uploads/2025/08/4-20250815.yaml
+- https://vpnformac.github.io/uploads/2025/08/0-20250827.yaml
+- https://vpnformac.github.io/uploads/2025/08/1-20250827.yaml
+- https://vpnformac.github.io/uploads/2025/08/2-20250827.yaml
+- https://vpnformac.github.io/uploads/2025/08/3-20250827.yaml
+- https://vpnformac.github.io/uploads/2025/08/4-20250827.yaml
 
 ### V2ray订阅链接
 
-- https://vpnformac.github.io/uploads/2025/08/0-20250815.txt
-- https://vpnformac.github.io/uploads/2025/08/1-20250815.txt
-- https://vpnformac.github.io/uploads/2025/08/2-20250815.txt
-- https://vpnformac.github.io/uploads/2025/08/3-20250815.txt
-- https://vpnformac.github.io/uploads/2025/08/4-20250815.txt
+- https://vpnformac.github.io/uploads/2025/08/0-20250827.txt
+- https://vpnformac.github.io/uploads/2025/08/1-20250827.txt
+- https://vpnformac.github.io/uploads/2025/08/2-20250827.txt
+- https://vpnformac.github.io/uploads/2025/08/3-20250827.txt
+- https://vpnformac.github.io/uploads/2025/08/4-20250827.txt
 
 ### Sing-box订阅链接
 
-- https://vpnformac.github.io/uploads/2025/08/20250815.json
+- https://vpnformac.github.io/uploads/2025/08/20250827.json
 
 ## 更多clash节点订阅 ：
 
