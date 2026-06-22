@@ -1,4 +1,4 @@
-# VPN for MAC | 6月15日19.2M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享  更新时间 2026-06-15 08:25:51
+# VPN for MAC | 6月22日21.5M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点订阅节点分享  更新时间 2026-06-22 08:28:28
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnformac.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://vpnformac.github.io/uploads/2026/06/0-20260615.yaml
-- https://vpnformac.github.io/uploads/2026/06/1-20260615.yaml
-- https://vpnformac.github.io/uploads/2026/06/2-20260615.yaml
-- https://vpnformac.github.io/uploads/2026/06/3-20260615.yaml
-- https://vpnformac.github.io/uploads/2026/06/4-20260615.yaml
+- https://vpnformac.github.io/uploads/2026/06/0-20260622.yaml
+- https://vpnformac.github.io/uploads/2026/06/1-20260622.yaml
+- https://vpnformac.github.io/uploads/2026/06/2-20260622.yaml
+- https://vpnformac.github.io/uploads/2026/06/3-20260622.yaml
+- https://vpnformac.github.io/uploads/2026/06/4-20260622.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://vpnformac.github.io/uploads/2026/06/0-20260615.txt
-- https://vpnformac.github.io/uploads/2026/06/1-20260615.txt
-- https://vpnformac.github.io/uploads/2026/06/2-20260615.txt
-- https://vpnformac.github.io/uploads/2026/06/3-20260615.txt
-- https://vpnformac.github.io/uploads/2026/06/4-20260615.txt
+- https://vpnformac.github.io/uploads/2026/06/0-20260622.txt
+- https://vpnformac.github.io/uploads/2026/06/1-20260622.txt
+- https://vpnformac.github.io/uploads/2026/06/2-20260622.txt
+- https://vpnformac.github.io/uploads/2026/06/3-20260622.txt
+- https://vpnformac.github.io/uploads/2026/06/4-20260622.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://vpnformac.github.io/uploads/2026/06/20260615.json
+- https://vpnformac.github.io/uploads/2026/06/20260622.json
 
 ## 更多Clash节点订阅 ：
 
