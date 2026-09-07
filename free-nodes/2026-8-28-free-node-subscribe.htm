@@ -353,19 +353,29 @@ sudo ufw </span><span><span class="hljs-built_in">disable</span></span><span>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 的 mKCP 参数如何调优以适应不稳定链路？</h5></div>
+    <div class="panel-body">
+        mKCP 有多个参数如 mtu、tinterval、uplink/downlink 等，可通过降低 mtu 与增大 mtu 重试间隔来适应高丢包场景；启用 FEC 与调整窗口大小能提高容错性，最终需在实际网络环境中逐步调试获得最佳值。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 的策略组支持按延迟选择节点吗？</h5></div>
+    <div class="panel-body">
+        支持。Sing-box 会根据节点延迟自动选择最优节点，结合策略组和路由规则，实现智能分流。延迟最低的节点优先被使用，提高网络访问速度和稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Matsuri 节点延迟排序如何提高访问速度？</h5></div>
+    <div class="panel-body">
+        Matsuri 定期测速节点延迟，结合策略组自动选择延迟最低节点处理流量。用户无需手动切换节点即可保持高速访问，提高网页浏览、视频播放和游戏体验的稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Surfboard 的配置文件可以与 Clash 通用吗？</h5></div>
+    <div class="panel-body">
+        Surfboard 基于 Clash 核心，因此支持大部分 YAML 配置文件，但部分字段如 rule-provider、external-controller 等可能不兼容。建议使用订阅转换工具将 Clash 文件转换为 Surfboard 兼容格式导入。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 如何通过策略组优化访问速度？</h5></div>
     <div class="panel-body">
         策略组允许用户将节点按延迟、地域或用途分组。结合路由规则，V2Ray 会自动选择最优节点处理流量，提升访问速度并降低延迟，尤其在访问海外网站时效果明显。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Quantumult X 的自动策略组如何工作？</h5></div>
-    <div class="panel-body">
-        Quantumult X 的自动策略组可根据延迟、可用性或测速结果自动选择最优节点，用户无需手动切换。可在策略组设置中开启“延迟优先”或“可用性优先”模式以优化体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 如何提升节点连接效率？</h5></div>
-    <div class="panel-body">
-        Matsuri 是一个支持多协议的代理工具，强调快速连接与自动切换功能。它可以根据延迟自动选择最优节点，减少手动切换的繁琐过程，保证网络体验的流畅性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 如何结合策略组实现自动节点切换？</h5></div>
@@ -373,9 +383,9 @@ sudo ufw </span><span><span class="hljs-built_in">disable</span></span><span>
         PassWall2 会定期测试节点延迟和丢包率，结合策略组自动切换到最优节点。无需手动干预即可保证网页、视频和游戏流量高速稳定访问，优化整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 的策略组支持按延迟选择节点吗？</h5></div>
+    <div class="panel-heading"><h5>Quantumult X 的自动策略组如何工作？</h5></div>
     <div class="panel-body">
-        支持。Sing-box 会根据节点延迟自动选择最优节点，结合策略组和路由规则，实现智能分流。延迟最低的节点优先被使用，提高网络访问速度和稳定性。<hr />    </div>
+        Quantumult X 的自动策略组可根据延迟、可用性或测速结果自动选择最优节点，用户无需手动切换。可在策略组设置中开启“延迟优先”或“可用性优先”模式以优化体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Mihomo 节点分组功能有什么优势？</h5></div>
@@ -388,19 +398,9 @@ sudo ufw </span><span><span class="hljs-built_in">disable</span></span><span>
         Clash for Android 是专为移动设备开发的客户端，安装后导入订阅链接即可使用。用户可设置代理模式（全局、规则、自定义）并查看实时流量信息。它的电量消耗较低，适合长期后台运行。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的 mKCP 参数如何调优以适应不稳定链路？</h5></div>
+    <div class="panel-heading"><h5>Matsuri 如何提升节点连接效率？</h5></div>
     <div class="panel-body">
-        mKCP 有多个参数如 mtu、tinterval、uplink/downlink 等，可通过降低 mtu 与增大 mtu 重试间隔来适应高丢包场景；启用 FEC 与调整窗口大小能提高容错性，最终需在实际网络环境中逐步调试获得最佳值。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 的配置文件可以与 Clash 通用吗？</h5></div>
-    <div class="panel-body">
-        Surfboard 基于 Clash 核心，因此支持大部分 YAML 配置文件，但部分字段如 rule-provider、external-controller 等可能不兼容。建议使用订阅转换工具将 Clash 文件转换为 Surfboard 兼容格式导入。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 节点延迟排序如何提高访问速度？</h5></div>
-    <div class="panel-body">
-        Matsuri 定期测速节点延迟，结合策略组自动选择延迟最低节点处理流量。用户无需手动切换节点即可保持高速访问，提高网页浏览、视频播放和游戏体验的稳定性。    </div>
+        Matsuri 是一个支持多协议的代理工具，强调快速连接与自动切换功能。它可以根据延迟自动选择最优节点，减少手动切换的繁琐过程，保证网络体验的流畅性。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -448,16 +448,16 @@ sudo ufw </span><span><span class="hljs-built_in">disable</span></span><span>
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-7-23-node-share-links.htm" title="VPN for MAC | 7月23日22.9M/S|免费V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点分享">VPN for MAC | 7月23日22.9M/S|免费V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-27-top-vpn.htm" title="VPN for MAC | 7月27日19.1M/S|免费V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点分享">VPN for MAC | 7月27日19.1M/S|免费V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-8-9.htm" title="VPN for MAC | 8月9日21.5M/S|免费Trojan节点/V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点分享">VPN for MAC | 8月9日21.5M/S|免费Trojan节点/V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-26-vpn-free.htm" title="VPN for MAC | 8月26日18.6M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点订阅节点分享">VPN for MAC | 8月26日18.6M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-7-31.htm" title="VPN for MAC | 7月31日19.2M/S|免费Clash节点/Shadowrocket节点/Trojan节点/SSR节点/V2ray节点/Singbox节点订阅节点分享">VPN for MAC | 7月31日19.2M/S|免费Clash节点/Shadowrocket节点/Trojan节点/SSR节点/V2ray节点/Singbox节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-8-23.htm" title="VPN for MAC | 8月23日20.6M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点订阅节点分享">VPN for MAC | 8月23日20.6M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-14-free-node-subscribe.htm" title="VPN for MAC | 8月14日20.6M/S|免费Singbox节点/Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点订阅节点分享">VPN for MAC | 8月14日20.6M/S|免费Singbox节点/Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-7-29.htm" title="VPN for MAC | 7月29日22.1M/S|免费Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点订阅节点分享">VPN for MAC | 7月29日22.1M/S|免费Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-8-25.htm" title="VPN for MAC | 8月25日19M/S|免费V2ray节点/Clash节点/Trojan节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享">VPN for MAC | 8月25日19M/S|免费V2ray节点/Clash节点/Trojan节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-6-free-node-subscribe.htm" title="VPN for MAC | 8月6日19.8M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/SSR节点订阅节点分享">VPN for MAC | 8月6日19.8M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-9-1.htm" title="VPN for MAC | 9月1日21.3M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点订阅节点分享">VPN for MAC | 9月1日21.3M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-10-vpn-node.htm" title="VPN for MAC | 8月10日21M/S|免费Trojan节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点分享">VPN for MAC | 8月10日21M/S|免费Trojan节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-18-vpn-node.htm" title="VPN for MAC | 8月18日22.9M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Clash节点订阅节点分享">VPN for MAC | 8月18日22.9M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Clash节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-8-31.htm" title="VPN for MAC | 8月31日19M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/Clash节点/Singbox节点/SSR节点订阅节点分享">VPN for MAC | 8月31日19M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/Clash节点/Singbox节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-20-vpn-free.htm" title="VPN for MAC | 8月20日18.3M/S|免费V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点分享">VPN for MAC | 8月20日18.3M/S|免费V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-30-node-share.htm" title="VPN for MAC | 8月30日20.3M/S|免费V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点分享">VPN for MAC | 8月30日20.3M/S|免费V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-8-13.htm" title="VPN for MAC | 8月13日22.7M/S|免费Trojan节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点订阅节点分享">VPN for MAC | 8月13日22.7M/S|免费Trojan节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-8-27.htm" title="VPN for MAC | 8月27日19.6M/S|免费Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点订阅节点分享">VPN for MAC | 8月27日19.6M/S|免费Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-15.htm" title="VPN for MAC | 8月15日18.4M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点订阅节点分享">VPN for MAC | 8月15日18.4M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-17.htm" title="VPN for MAC | 8月17日18.5M/S|免费SSR节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅节点分享">VPN for MAC | 8月17日18.5M/S|免费SSR节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅节点分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -469,10 +469,10 @@ sudo ufw </span><span><span class="hljs-built_in">disable</span></span><span>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">31</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                     </ul>
     </div>
